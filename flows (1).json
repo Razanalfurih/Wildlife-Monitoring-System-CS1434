@@ -1,0 +1,1491 @@
+[
+    {
+        "id": "bdd7f3f23f742317",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "fa12e73a9e4628ee",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.emqx.io",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "181feb298545c365",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "33ba69a1600f0de1",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094CE",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "943ed2fa3b046a28",
+        "type": "ui-page",
+        "name": "Page 1",
+        "ui": "181feb298545c365",
+        "path": "/page1",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "33ba69a1600f0de1",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "16cfbc805269f26c",
+        "type": "ui-group",
+        "name": "Zone 1",
+        "page": "943ed2fa3b046a28",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "1c521222f842b3ee",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "d7c726914a801c81",
+        "type": "ui_tab",
+        "name": "Page 1",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "6b77428bf78c7cfb",
+        "type": "ui_group",
+        "name": "Sensors",
+        "tab": "d7c726914a801c81",
+        "order": 1,
+        "disp": true,
+        "width": "2",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "60eb6863773a1120",
+        "type": "ui_group",
+        "d": true,
+        "name": "Zone 1",
+        "tab": "d7c726914a801c81",
+        "order": 2,
+        "disp": true,
+        "width": "2",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "a0ad7af3486867f2",
+        "type": "ui-group",
+        "name": "Zone 2",
+        "page": "943ed2fa3b046a28",
+        "width": 6,
+        "height": 1,
+        "order": -1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "4a42a2bf4d446051",
+        "type": "ui-group",
+        "name": "Zone 3",
+        "page": "943ed2fa3b046a28",
+        "width": 6,
+        "height": 1,
+        "order": -1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "7722cb2972f99d53",
+        "type": "ui_group",
+        "name": "Zone 2",
+        "tab": "d7c726914a801c81",
+        "order": 3,
+        "disp": true,
+        "width": "2",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "747701a8177535be",
+        "type": "ui_group",
+        "name": "Zone 3",
+        "tab": "d7c726914a801c81",
+        "order": 4,
+        "disp": true,
+        "width": "2",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "df7b99a29ca0171e",
+        "type": "inject",
+        "z": "bdd7f3f23f742317",
+        "name": "Zone1",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 80,
+        "y": 160,
+        "wires": [
+            [
+                "9b0ba056db356b0e"
+            ]
+        ]
+    },
+    {
+        "id": "9b0ba056db356b0e",
+        "type": "function",
+        "z": "bdd7f3f23f742317",
+        "name": "Sensors",
+        "func": "let waterValues = [\"high\", \"medium\", \"low\", \"empty\"];\nlet motionTypes = [\"animal\", \"intruder\"];\n\nlet temperature = Math.floor(Math.random() * (52 - 25 + 1)) + 25;\n\nlet water_level =\nwaterValues[Math.floor(Math.random() * waterValues.length)];\n\nlet motion = Math.random() > 0.5 ? 1 : 0;\n\nlet type = motion === 1\n? motionTypes[Math.floor(Math.random() * motionTypes.length)]\n: \"none\";\n\nmsg.payload = {\n    zone: \"Zone 1\",\n    species: \"Arabian Leopard\",\n    temperature: temperature,\n    water_level: water_level,\n    motion: motion,\n    type: type\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 160,
+        "wires": [
+            [
+                "a32ac2efb87ad41d",
+                "c811d1452d9abdcc"
+            ]
+        ]
+    },
+    {
+        "id": "c811d1452d9abdcc",
+        "type": "debug",
+        "z": "bdd7f3f23f742317",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "a32ac2efb87ad41d",
+        "type": "mqtt out",
+        "z": "bdd7f3f23f742317",
+        "name": "Publish Zone 1 Data",
+        "topic": "wildlife/zone1/data",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "fa12e73a9e4628ee",
+        "x": 440,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "bb7a75cb4c40d142",
+        "type": "mqtt in",
+        "z": "bdd7f3f23f742317",
+        "name": "Subscribe Zone 1 Data",
+        "topic": "wildlife/zone1/data",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "fa12e73a9e4628ee",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 440,
+        "y": 260,
+        "wires": [
+            [
+                "61505acb5b4d1268"
+            ]
+        ]
+    },
+    {
+        "id": "e9c688b1de2614ad",
+        "type": "debug",
+        "z": "bdd7f3f23f742317",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "61505acb5b4d1268",
+        "type": "function",
+        "z": "bdd7f3f23f742317",
+        "name": "Check Alerts",
+        "func": "let data = msg.payload;\n\nif (typeof data === \"string\") {\n    data = JSON.parse(data);\n}\n\nlet status = \"STABLE\";\nlet alert = \"All conditions are safe.\";\n\nif (data.temperature > 45) {\n    status = \"CRITICAL\";\n    alert = \"CRITICAL: Temperature above 45°C!\";\n}\nelse if (data.temperature > 42) {\n    status = \"WARNING\";\n    alert = \"WARNING: Temperature above 42°C.\";\n}\n\nif (data.water_level === \"empty\") {\n    status = \"CRITICAL\";\n    alert = \"CRITICAL: Water tank is empty!\";\n}\nelse if (data.water_level === \"low\" && status !== \"CRITICAL\") {\n    status = \"WARNING\";\n    alert = \"WARNING: Water level is low.\";\n}\n\nif (data.type === \"intruder\") {\n    status = \"CRITICAL\";\n    alert = \"CRITICAL: Intruder detected!\";\n}\n\nmsg.payload = {\n    zone: data.zone,\n    species: data.species,\n    temperature: data.temperature,\n    water_level: data.water_level,\n    motion: data.motion,\n    type: data.type,\n    status: status,\n    alert: alert\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 260,
+        "wires": [
+            [
+                "e9c688b1de2614ad",
+                "423db32f0517ad85",
+                "574320db80ca2fbf",
+                "e198c1ac3fbdac09",
+                "71a6807a1a437a79",
+                "a1ec73eb36047d74"
+            ]
+        ]
+    },
+    {
+        "id": "423db32f0517ad85",
+        "type": "function",
+        "z": "bdd7f3f23f742317",
+        "name": "Extract Temperature",
+        "func": "msg.payload = msg.payload.temperature;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 320,
+        "wires": [
+            [
+                "db59849a5af3131e"
+            ]
+        ]
+    },
+    {
+        "id": "574320db80ca2fbf",
+        "type": "function",
+        "z": "bdd7f3f23f742317",
+        "name": "Extract Alert",
+        "func": "msg.payload = msg.payload.alert;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 380,
+        "wires": [
+            [
+                "11c1ab7faba75980"
+            ]
+        ]
+    },
+    {
+        "id": "e198c1ac3fbdac09",
+        "type": "function",
+        "z": "bdd7f3f23f742317",
+        "name": "Extract Water Level",
+        "func": "msg.payload = msg.payload.water_level;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 460,
+        "wires": [
+            [
+                "a4e9ed4950884fa0"
+            ]
+        ]
+    },
+    {
+        "id": "71a6807a1a437a79",
+        "type": "function",
+        "z": "bdd7f3f23f742317",
+        "name": "Extract Motion Status",
+        "func": "if (msg.payload.motion === 1) {\n    msg.payload = \"Motion detected: \" + msg.payload.type;\n} else {\n    msg.payload = \"No motion\";\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 540,
+        "wires": [
+            [
+                "31bcc12af0774849"
+            ]
+        ]
+    },
+    {
+        "id": "a1ec73eb36047d74",
+        "type": "function",
+        "z": "bdd7f3f23f742317",
+        "name": "Prepare Alert Message",
+        "func": "msg.payload = msg.payload.alert;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 600,
+        "wires": [
+            [
+                "1fa1c6b7331e7019"
+            ]
+        ]
+    },
+    {
+        "id": "1fa1c6b7331e7019",
+        "type": "mqtt out",
+        "z": "bdd7f3f23f742317",
+        "name": "Publish Zone 1 Alert",
+        "topic": "wildlife/zone1/alerts",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "fa12e73a9e4628ee",
+        "x": 1080,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "11c1ab7faba75980",
+        "type": "ui-text",
+        "z": "bdd7f3f23f742317",
+        "group": "16cfbc805269f26c",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "System Status",
+        "label": "System Status :",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 1020,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "a4e9ed4950884fa0",
+        "type": "ui-text",
+        "z": "bdd7f3f23f742317",
+        "group": "16cfbc805269f26c",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Water Level",
+        "label": "Water Level :",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 1030,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "31bcc12af0774849",
+        "type": "ui-text",
+        "z": "bdd7f3f23f742317",
+        "group": "16cfbc805269f26c",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "Motion Status",
+        "label": "Motion Status :",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 1060,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "db59849a5af3131e",
+        "type": "ui-gauge",
+        "z": "bdd7f3f23f742317",
+        "name": "Zone 1 Temperature",
+        "group": "16cfbc805269f26c",
+        "order": 3,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Temperature",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "units",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "4",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "7",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": "25",
+        "max": "52",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1020,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "14e14639d0e7c26b",
+        "type": "inject",
+        "z": "bdd7f3f23f742317",
+        "name": "Zone 2",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 80,
+        "y": 760,
+        "wires": [
+            [
+                "3490eafd2c80d75e"
+            ]
+        ]
+    },
+    {
+        "id": "3490eafd2c80d75e",
+        "type": "function",
+        "z": "bdd7f3f23f742317",
+        "name": "Sensors",
+        "func": "let waterValues = [\"high\", \"medium\", \"low\", \"empty\"];\nlet motionTypes = [\"animal\", \"intruder\"];\n\nlet temperature = Math.floor(Math.random() * (52 - 25 + 1)) + 25;\n\nlet water_level =\nwaterValues[Math.floor(Math.random() * waterValues.length)];\n\nlet motion = Math.random() > 0.5 ? 1 : 0;\n\nlet type = motion === 1\n? motionTypes[Math.floor(Math.random() * motionTypes.length)]\n: \"none\";\n\nmsg.payload = {\n    zone: \"Zone 1\",\n    species: \"Arabian Leopard\",\n    temperature: temperature,\n    water_level: water_level,\n    motion: motion,\n    type: type\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 760,
+        "wires": [
+            [
+                "46ffd5802bfd5770",
+                "aa6a98e059675ad3"
+            ]
+        ]
+    },
+    {
+        "id": "aa6a98e059675ad3",
+        "type": "debug",
+        "z": "bdd7f3f23f742317",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "46ffd5802bfd5770",
+        "type": "mqtt out",
+        "z": "bdd7f3f23f742317",
+        "name": "Publish Zone 2 Data",
+        "topic": "wildlife/zone2/data",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "fa12e73a9e4628ee",
+        "x": 440,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "2e9a79534d489119",
+        "type": "mqtt in",
+        "z": "bdd7f3f23f742317",
+        "name": "Subscribe Zone 2 Data",
+        "topic": "wildlife/zone2/data",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "fa12e73a9e4628ee",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 440,
+        "y": 860,
+        "wires": [
+            [
+                "fb28aaacaf1e6b78"
+            ]
+        ]
+    },
+    {
+        "id": "dee13e8d62d924f6",
+        "type": "debug",
+        "z": "bdd7f3f23f742317",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "fb28aaacaf1e6b78",
+        "type": "function",
+        "z": "bdd7f3f23f742317",
+        "name": "Check Alerts",
+        "func": "let data = msg.payload;\n\nif (typeof data === \"string\") {\n    data = JSON.parse(data);\n}\n\nlet status = \"STABLE\";\nlet alert = \"All conditions are safe.\";\n\nif (data.temperature > 45) {\n    status = \"CRITICAL\";\n    alert = \"CRITICAL: Temperature above 45°C!\";\n}\nelse if (data.temperature > 42) {\n    status = \"WARNING\";\n    alert = \"WARNING: Temperature above 42°C.\";\n}\n\nif (data.water_level === \"empty\") {\n    status = \"CRITICAL\";\n    alert = \"CRITICAL: Water tank is empty!\";\n}\nelse if (data.water_level === \"low\" && status !== \"CRITICAL\") {\n    status = \"WARNING\";\n    alert = \"WARNING: Water level is low.\";\n}\n\nif (data.type === \"intruder\") {\n    status = \"CRITICAL\";\n    alert = \"CRITICAL: Intruder detected!\";\n}\n\nmsg.payload = {\n    zone: data.zone,\n    species: data.species,\n    temperature: data.temperature,\n    water_level: data.water_level,\n    motion: data.motion,\n    type: data.type,\n    status: status,\n    alert: alert\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 860,
+        "wires": [
+            [
+                "dee13e8d62d924f6",
+                "1641e95a8f7e6458",
+                "7c57e6218a87af25",
+                "5c34ebee16fefd2b",
+                "fad05785398fcf37",
+                "fffc5af66baae5b6"
+            ]
+        ]
+    },
+    {
+        "id": "1641e95a8f7e6458",
+        "type": "function",
+        "z": "bdd7f3f23f742317",
+        "name": "Extract Temperature",
+        "func": "msg.payload = msg.payload.temperature;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 920,
+        "wires": [
+            [
+                "6f65342273095805"
+            ]
+        ]
+    },
+    {
+        "id": "7c57e6218a87af25",
+        "type": "function",
+        "z": "bdd7f3f23f742317",
+        "name": "Extract Alert",
+        "func": "msg.payload = msg.payload.alert;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 980,
+        "wires": [
+            [
+                "0bb684c100906fca"
+            ]
+        ]
+    },
+    {
+        "id": "5c34ebee16fefd2b",
+        "type": "function",
+        "z": "bdd7f3f23f742317",
+        "name": "Extract Water Level",
+        "func": "msg.payload = msg.payload.water_level;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 1060,
+        "wires": [
+            [
+                "3573b89a6a094362"
+            ]
+        ]
+    },
+    {
+        "id": "fad05785398fcf37",
+        "type": "function",
+        "z": "bdd7f3f23f742317",
+        "name": "Extract Motion Status",
+        "func": "if (msg.payload.motion === 1) {\n    msg.payload = \"Motion detected: \" + msg.payload.type;\n} else {\n    msg.payload = \"No motion\";\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 1140,
+        "wires": [
+            [
+                "deb9912f931d5f59"
+            ]
+        ]
+    },
+    {
+        "id": "fffc5af66baae5b6",
+        "type": "function",
+        "z": "bdd7f3f23f742317",
+        "name": "Prepare Alert Message",
+        "func": "msg.payload = msg.payload.alert;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 1200,
+        "wires": [
+            [
+                "d6f99ad86997a4c2"
+            ]
+        ]
+    },
+    {
+        "id": "d6f99ad86997a4c2",
+        "type": "mqtt out",
+        "z": "bdd7f3f23f742317",
+        "name": "Publish Zone 2 Alert",
+        "topic": "wildlife/zone2/alerts",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "fa12e73a9e4628ee",
+        "x": 1080,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "0bb684c100906fca",
+        "type": "ui-text",
+        "z": "bdd7f3f23f742317",
+        "group": "a0ad7af3486867f2",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "System Status",
+        "label": "System Status :",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 1020,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "3573b89a6a094362",
+        "type": "ui-text",
+        "z": "bdd7f3f23f742317",
+        "group": "a0ad7af3486867f2",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Water Level",
+        "label": "Water Level :",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 1030,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "deb9912f931d5f59",
+        "type": "ui-text",
+        "z": "bdd7f3f23f742317",
+        "group": "a0ad7af3486867f2",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "Motion Status",
+        "label": "Motion Status :",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 1060,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "6f65342273095805",
+        "type": "ui-gauge",
+        "z": "bdd7f3f23f742317",
+        "name": "Zone 2 Temperature",
+        "group": "a0ad7af3486867f2",
+        "order": 3,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Temperature",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "units",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "4",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "7",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": "25",
+        "max": "52",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1020,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "84b6652edb0dba65",
+        "type": "inject",
+        "z": "bdd7f3f23f742317",
+        "name": "Zone 3",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 80,
+        "y": 1260,
+        "wires": [
+            [
+                "d60cec5f9d0f5f7a"
+            ]
+        ]
+    },
+    {
+        "id": "d60cec5f9d0f5f7a",
+        "type": "function",
+        "z": "bdd7f3f23f742317",
+        "name": "Sensors",
+        "func": "let waterValues = [\"high\", \"medium\", \"low\", \"empty\"];\nlet motionTypes = [\"animal\", \"intruder\"];\n\nlet temperature = Math.floor(Math.random() * (52 - 25 + 1)) + 25;\n\nlet water_level =\nwaterValues[Math.floor(Math.random() * waterValues.length)];\n\nlet motion = Math.random() > 0.5 ? 1 : 0;\n\nlet type = motion === 1\n? motionTypes[Math.floor(Math.random() * motionTypes.length)]\n: \"none\";\n\nmsg.payload = {\n    zone: \"Zone 1\",\n    species: \"Arabian Leopard\",\n    temperature: temperature,\n    water_level: water_level,\n    motion: motion,\n    type: type\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 1260,
+        "wires": [
+            [
+                "deab65cf38fa3732",
+                "3db03a6bfaced715"
+            ]
+        ]
+    },
+    {
+        "id": "3db03a6bfaced715",
+        "type": "debug",
+        "z": "bdd7f3f23f742317",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "deab65cf38fa3732",
+        "type": "mqtt out",
+        "z": "bdd7f3f23f742317",
+        "name": "Publish Zone 3 Data",
+        "topic": "wildlife/zone3/data",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "fa12e73a9e4628ee",
+        "x": 440,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "e98379e4b39a2e5c",
+        "type": "mqtt in",
+        "z": "bdd7f3f23f742317",
+        "name": "Subscribe Zone 3 Data",
+        "topic": "wildlife/zone3/data",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "fa12e73a9e4628ee",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 440,
+        "y": 1360,
+        "wires": [
+            [
+                "ec50c2072cdfadde"
+            ]
+        ]
+    },
+    {
+        "id": "5d71c874e45c8d9c",
+        "type": "debug",
+        "z": "bdd7f3f23f742317",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "ec50c2072cdfadde",
+        "type": "function",
+        "z": "bdd7f3f23f742317",
+        "name": "Check Alerts",
+        "func": "let data = msg.payload;\n\nif (typeof data === \"string\") {\n    data = JSON.parse(data);\n}\n\nlet status = \"STABLE\";\nlet alert = \"All conditions are safe.\";\n\nif (data.temperature > 45) {\n    status = \"CRITICAL\";\n    alert = \"CRITICAL: Temperature above 45°C!\";\n}\nelse if (data.temperature > 42) {\n    status = \"WARNING\";\n    alert = \"WARNING: Temperature above 42°C.\";\n}\n\nif (data.water_level === \"empty\") {\n    status = \"CRITICAL\";\n    alert = \"CRITICAL: Water tank is empty!\";\n}\nelse if (data.water_level === \"low\" && status !== \"CRITICAL\") {\n    status = \"WARNING\";\n    alert = \"WARNING: Water level is low.\";\n}\n\nif (data.type === \"intruder\") {\n    status = \"CRITICAL\";\n    alert = \"CRITICAL: Intruder detected!\";\n}\n\nmsg.payload = {\n    zone: data.zone,\n    species: data.species,\n    temperature: data.temperature,\n    water_level: data.water_level,\n    motion: data.motion,\n    type: data.type,\n    status: status,\n    alert: alert\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 1360,
+        "wires": [
+            [
+                "5d71c874e45c8d9c",
+                "90da7fa63f5dec7d",
+                "3fd0d74a741e71cb",
+                "544a5649c9ea750c",
+                "321a585e7dfa9a38",
+                "bcc9e750cb926444"
+            ]
+        ]
+    },
+    {
+        "id": "90da7fa63f5dec7d",
+        "type": "function",
+        "z": "bdd7f3f23f742317",
+        "name": "Extract Temperature",
+        "func": "msg.payload = msg.payload.temperature;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 1420,
+        "wires": [
+            [
+                "4a4d2b98619c967a"
+            ]
+        ]
+    },
+    {
+        "id": "3fd0d74a741e71cb",
+        "type": "function",
+        "z": "bdd7f3f23f742317",
+        "name": "Extract Alert",
+        "func": "msg.payload = msg.payload.alert;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 1480,
+        "wires": [
+            [
+                "769d83f7f2c70205"
+            ]
+        ]
+    },
+    {
+        "id": "544a5649c9ea750c",
+        "type": "function",
+        "z": "bdd7f3f23f742317",
+        "name": "Extract Water Level",
+        "func": "msg.payload = msg.payload.water_level;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 1560,
+        "wires": [
+            [
+                "e2041768893b68e1"
+            ]
+        ]
+    },
+    {
+        "id": "321a585e7dfa9a38",
+        "type": "function",
+        "z": "bdd7f3f23f742317",
+        "name": "Extract Motion Status",
+        "func": "if (msg.payload.motion === 1) {\n    msg.payload = \"Motion detected: \" + msg.payload.type;\n} else {\n    msg.payload = \"No motion\";\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 1640,
+        "wires": [
+            [
+                "4d6ae66d6a2b0fb5"
+            ]
+        ]
+    },
+    {
+        "id": "bcc9e750cb926444",
+        "type": "function",
+        "z": "bdd7f3f23f742317",
+        "name": "Prepare Alert Message",
+        "func": "msg.payload = msg.payload.alert;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 1700,
+        "wires": [
+            [
+                "402ba3983affb18e"
+            ]
+        ]
+    },
+    {
+        "id": "402ba3983affb18e",
+        "type": "mqtt out",
+        "z": "bdd7f3f23f742317",
+        "name": "Publish Zone 3 Alert",
+        "topic": "wildlife/zone3/alerts",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "fa12e73a9e4628ee",
+        "x": 1080,
+        "y": 1700,
+        "wires": []
+    },
+    {
+        "id": "769d83f7f2c70205",
+        "type": "ui-text",
+        "z": "bdd7f3f23f742317",
+        "group": "4a42a2bf4d446051",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "System Status",
+        "label": "System Status :",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 1020,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "e2041768893b68e1",
+        "type": "ui-text",
+        "z": "bdd7f3f23f742317",
+        "group": "4a42a2bf4d446051",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Water Level",
+        "label": "Water Level :",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 1030,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "4d6ae66d6a2b0fb5",
+        "type": "ui-text",
+        "z": "bdd7f3f23f742317",
+        "group": "4a42a2bf4d446051",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "Motion Status",
+        "label": "Motion Status :",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 1060,
+        "y": 1640,
+        "wires": []
+    },
+    {
+        "id": "4a4d2b98619c967a",
+        "type": "ui-gauge",
+        "z": "bdd7f3f23f742317",
+        "name": "Zone 3 Temperature",
+        "group": "4a42a2bf4d446051",
+        "order": 3,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Temperature",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "units",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "4",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "7",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": "25",
+        "max": "52",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1020,
+        "y": 1420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "af55e4116cc51d8b",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "@flowfuse/node-red-dashboard": "1.30.2",
+            "node-red-dashboard": "3.6.6"
+        }
+    }
+]
