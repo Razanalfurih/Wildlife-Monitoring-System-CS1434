@@ -731,7 +731,7 @@
         "type": "function",
         "z": "bdd7f3f23f742317",
         "name": "Sensors",
-        "func": "let waterValues = [\"high\", \"medium\", \"low\", \"empty\"];\nlet motionTypes = [\"animal\", \"intruder\"];\n\nlet temperature = Math.floor(Math.random() * (52 - 25 + 1)) + 25;\n\nlet water_level =\nwaterValues[Math.floor(Math.random() * waterValues.length)];\n\nlet motion = Math.random() > 0.5 ? 1 : 0;\n\nlet type = motion === 1\n? motionTypes[Math.floor(Math.random() * motionTypes.length)]\n: \"none\";\n\nmsg.payload = {\n    zone: \"Zone 1\",\n    species: \"Arabian Leopard\",\n    temperature: temperature,\n    water_level: water_level,\n    motion: motion,\n    type: type\n};\n\nreturn msg;",
+        "func": "let waterValues = [\"high\", \"medium\", \"low\", \"empty\"];\nlet motionTypes = [\"animal\", \"intruder\"];\n\nlet temperature = Math.floor(Math.random() * (52 - 25 + 1)) + 25;\n\nlet water_level =\nwaterValues[Math.floor(Math.random() * waterValues.length)];\n\nlet motion = Math.random() > 0.5 ? 1 : 0;\n\nlet type = motion === 1\n? motionTypes[Math.floor(Math.random() * motionTypes.length)]\n: \"none\";\n\nmsg.payload = {\n    zone: \"Zone 2\",\n    species: \"Arabian Oryx \",\n    temperature: temperature,\n    water_level: water_level,\n    motion: motion,\n    type: type\n};\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -1122,7 +1122,7 @@
         "type": "function",
         "z": "bdd7f3f23f742317",
         "name": "Sensors",
-        "func": "let waterValues = [\"high\", \"medium\", \"low\", \"empty\"];\nlet motionTypes = [\"animal\", \"intruder\"];\n\nlet temperature = Math.floor(Math.random() * (52 - 25 + 1)) + 25;\n\nlet water_level =\nwaterValues[Math.floor(Math.random() * waterValues.length)];\n\nlet motion = Math.random() > 0.5 ? 1 : 0;\n\nlet type = motion === 1\n? motionTypes[Math.floor(Math.random() * motionTypes.length)]\n: \"none\";\n\nmsg.payload = {\n    zone: \"Zone 1\",\n    species: \"Arabian Leopard\",\n    temperature: temperature,\n    water_level: water_level,\n    motion: motion,\n    type: type\n};\n\nreturn msg;",
+        "func": "let waterValues = [\"high\", \"medium\", \"low\", \"empty\"];\nlet motionTypes = [\"animal\", \"intruder\"];\n\nlet temperature = Math.floor(Math.random() * (52 - 25 + 1)) + 25;\n\nlet water_level =\nwaterValues[Math.floor(Math.random() * waterValues.length)];\n\nlet motion = Math.random() > 0.5 ? 1 : 0;\n\nlet type = motion === 1\n? motionTypes[Math.floor(Math.random() * motionTypes.length)]\n: \"none\";\n\nmsg.payload = {\n    zone: \"Zone 3\",\n    species: \"Arabian Gazelle\",\n    temperature: temperature,\n    water_level: water_level,\n    motion: motion,\n    type: type\n};\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -1480,7 +1480,7 @@
         ]
     },
     {
-        "id": "af55e4116cc51d8b",
+        "id": "e9f2d2eb0816195d",
         "type": "global-config",
         "env": [],
         "modules": {
