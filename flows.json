@@ -227,7 +227,7 @@
     {
         "id": "d7c726914a801c81",
         "type": "ui_tab",
-        "name": "Page 1",
+        "name": "Smart Wildlife Habitat Monitoring dashboard",
         "icon": "dashboard",
         "order": 1,
         "disabled": false,
@@ -248,7 +248,7 @@
         "id": "60eb6863773a1120",
         "type": "ui_group",
         "d": true,
-        "name": "Zone 1",
+        "name": " Leopard Highlands ",
         "tab": "d7c726914a801c81",
         "order": 2,
         "disp": true,
@@ -287,7 +287,7 @@
     {
         "id": "7722cb2972f99d53",
         "type": "ui_group",
-        "name": "Zone 2",
+        "name": "Oryx Plains",
         "tab": "d7c726914a801c81",
         "order": 3,
         "disp": true,
@@ -298,7 +298,7 @@
     {
         "id": "747701a8177535be",
         "type": "ui_group",
-        "name": "Zone 3",
+        "name": "Gazelle Valley",
         "tab": "d7c726914a801c81",
         "order": 4,
         "disp": true,
@@ -310,7 +310,7 @@
         "id": "df7b99a29ca0171e",
         "type": "inject",
         "z": "bdd7f3f23f742317",
-        "name": "Zone1",
+        "name": "Zone1-Leopard Highlands",
         "props": [
             {
                 "p": "payload"
@@ -327,7 +327,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 80,
+        "x": 140,
         "y": 160,
         "wires": [
             [
@@ -665,19 +665,19 @@
         "suffix": "",
         "segments": [
             {
-                "from": "0",
+                "from": "25",
                 "color": "#5cd65c",
                 "text": "",
                 "textType": "label"
             },
             {
-                "from": "4",
+                "from": "43",
                 "color": "#ffc800",
                 "text": "",
                 "textType": "label"
             },
             {
-                "from": "7",
+                "from": "46",
                 "color": "#ea5353",
                 "text": "",
                 "textType": "label"
@@ -701,7 +701,7 @@
         "id": "14e14639d0e7c26b",
         "type": "inject",
         "z": "bdd7f3f23f742317",
-        "name": "Zone 2",
+        "name": "Zone 2- Oryx Plains",
         "props": [
             {
                 "p": "payload"
@@ -718,7 +718,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 80,
+        "x": 120,
         "y": 760,
         "wires": [
             [
@@ -1056,19 +1056,19 @@
         "suffix": "",
         "segments": [
             {
-                "from": "0",
+                "from": "25",
                 "color": "#5cd65c",
                 "text": "",
                 "textType": "label"
             },
             {
-                "from": "4",
+                "from": "43",
                 "color": "#ffc800",
                 "text": "",
                 "textType": "label"
             },
             {
-                "from": "7",
+                "from": "46",
                 "color": "#ea5353",
                 "text": "",
                 "textType": "label"
@@ -1092,7 +1092,7 @@
         "id": "84b6652edb0dba65",
         "type": "inject",
         "z": "bdd7f3f23f742317",
-        "name": "Zone 3",
+        "name": "Zone 3- Gazelle Valley",
         "props": [
             {
                 "p": "payload"
@@ -1109,7 +1109,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 80,
+        "x": 130,
         "y": 1260,
         "wires": [
             [
@@ -1447,19 +1447,19 @@
         "suffix": "",
         "segments": [
             {
-                "from": "0",
+                "from": "25",
                 "color": "#5cd65c",
                 "text": "",
                 "textType": "label"
             },
             {
-                "from": "4",
+                "from": "43",
                 "color": "#ffc800",
                 "text": "",
                 "textType": "label"
             },
             {
-                "from": "7",
+                "from": "46",
                 "color": "#ea5353",
                 "text": "",
                 "textType": "label"
@@ -1480,7 +1480,7 @@
         ]
     },
     {
-        "id": "e9f2d2eb0816195d",
+        "id": "8969a21956113843",
         "type": "global-config",
         "env": [],
         "modules": {
