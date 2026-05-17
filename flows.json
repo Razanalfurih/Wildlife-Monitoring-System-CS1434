@@ -116,7 +116,7 @@
     {
         "id": "16cfbc805269f26c",
         "type": "ui-group",
-        "name": "Zone 1",
+        "name": "Zone 1 — Leopard Highlands",
         "page": "943ed2fa3b046a28",
         "width": 6,
         "height": 1,
@@ -259,7 +259,7 @@
     {
         "id": "a0ad7af3486867f2",
         "type": "ui-group",
-        "name": "Zone 2",
+        "name": "Zone 2 — Oryx Plains",
         "page": "943ed2fa3b046a28",
         "width": 6,
         "height": 1,
@@ -273,7 +273,7 @@
     {
         "id": "4a42a2bf4d446051",
         "type": "ui-group",
-        "name": "Zone 3",
+        "name": "Zone 3 — Gazelle Valley",
         "page": "943ed2fa3b046a28",
         "width": 6,
         "height": 1,
@@ -327,7 +327,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 140,
+        "x": 120,
         "y": 160,
         "wires": [
             [
@@ -347,7 +347,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 240,
+        "x": 340,
         "y": 160,
         "wires": [
             [
@@ -368,7 +368,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 420,
+        "x": 520,
         "y": 160,
         "wires": []
     },
@@ -386,7 +386,7 @@
         "correl": "",
         "expiry": "",
         "broker": "fa12e73a9e4628ee",
-        "x": 440,
+        "x": 520,
         "y": 200,
         "wires": []
     },
@@ -1480,7 +1480,7 @@
         ]
     },
     {
-        "id": "8969a21956113843",
+        "id": "732b4e87f0f63588",
         "type": "global-config",
         "env": [],
         "modules": {
